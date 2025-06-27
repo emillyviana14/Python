@@ -1,10 +1,14 @@
-# Python 🐍
+## Projetos em Python 🐍
+Este repositório reúne diversos projetinhos em Python, voltados para aprendizado, prática e diversão. Abaixo, você encontra uma lista de todos, com uma breve descrição de cada um.
 
-Este é um projeto em Python para votação do dia da semana favorito dos usuários.
+## Projetos
+- 01 - Votação
+  Uma votação em os dias da semana, que no final mostra o vencedor
+- 02 - Juros em parcelas
+  Recebe o valor de um carro e mostra uma tabela com os seguintes dados: preço final, quantidade de parcelas e valor da parcela
+- 03 - Juros de impréstimo
+  Recebe o valor de um impréstimo e mostra uma tabela com valor da dívida e dos juros proporcional a quantidade de parcelas escolhida.
 
-## 💡 Objetivo
-
-Desenvolver um sistema simples de votação usando Python, onde o usuário pode escolher seu dia favorito da semana.
 
 ## 🚀 Como executar
 
