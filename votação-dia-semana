@@ -1,0 +1,49 @@
+#CONCLUÍDO
+#A Bidu é uma startup na área de Fintech fundada em 2011 que ajuda os usuários a controlar suas fontes de receitas, gastos, dívidas e investimentos.  Ela precisa realizar uma votação para escolher qual dia da semana é o melhor para a realização das lives com o time da mentoria financeira. Desenvolva um programa em que os colaboradores informem um dos 5 dias da semana (segunda-feira, terça-feira, quarta-feira, quinta-feira e sexta-feira) da sua preferência para participar da live. Verifique e exiba ao final, qual dia foi o escolhido pelos colaboradores.
+
+#Observação: Verifique o número de colaboradores que irão participar da votação para programar sua estrutura de repetição."
+
+print('Essa é uma votação para escolher qual dia da semana é o melhor para realização das lives com o time da mentoria financeira.')
+numero_participantes = int(input('Primeiramente insira o número de colaboradores que irão participar: '))
+
+# Variáveis para contar votos
+segunda = 0
+terça = 0
+quarta = 0
+quinta = 0 
+sexta = 0
+
+# Loop para votos
+for i in range(1, numero_participantes + 1):
+    dia_escolhido = input('Qual será sua escolha? Segunda-feira, terça-feira, quarta-feira, quinta-feira ou sexta-feira? ')
+
+    # Contando os votos
+    if dia_escolhido == 'segunda-feira':
+        segunda += 1
+    elif dia_escolhido == 'terça-feira':
+        terça += 1
+    elif dia_escolhido == 'quarta-feira':
+        quarta += 1
+    elif dia_escolhido == 'quinta-feira':
+        quinta += 1
+    elif dia_escolhido == 'sexta-feira':
+        sexta += 1
+
+# Qual foi o mais votado 
+maior_voto = segunda
+dia_mais_votado = 'Segunda-feira'
+
+if terça > maior_voto:
+     maior_voto = terça
+     dia_mais_votado = 'Terça-feira'
+if quarta > maior_voto:
+     maior_voto = quarta
+     dia_mais_votado = 'Quarta-feira'
+if quinta > maior_voto:
+     maior_voto = quinta
+     dia_mais_votado = 'Quinta-feira'
+if sexta > maior_voto:
+     maior_voto = sexta
+     dia_mais_votado = 'Sexta-feira'
+
+print(f'O dia mais votado foi {dia_mais_votado} com {maior_voto} votos')
